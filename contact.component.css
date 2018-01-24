@@ -1,0 +1,14 @@
+.contact-heading{
+    font-size:18px;
+    font-weight:bold;
+    color:black;
+    padding:25px 0px;
+}
+
+.contact-content{
+    font-size:14px;
+}
+
+.name{
+    font-weight:bold;
+}

@@ -1,0 +1,51 @@
+<div class="wrapper">
+    <div class="header-container">
+      <div class="mob-container">
+          <div class="mob-side-menu">
+              <div style="padding:22px 15px;" (click)="toggleSideMenu()">
+                <span class="glyphicon glyphicon-menu-hamburger"></span>
+              </div>
+              <div style="text-align:center;margin-top:-50px;">Nrithya Sangama</div>
+          </div>
+          
+      </div>
+      <div class="web-container">
+        <div class="header-main-tab"> 
+          <div class="main-tab-content">Nrithya Sangama</div>
+        </div>
+        <div class="header-sub-tab">       
+        <div><a routerLink="/Home" routerLinkActive="active">Home</a></div>
+        <div><a routerLink="/Gallery" routerLinkActive="active" >Gallery</a></div>
+        <div><a routerLink="/Class" routerLinkActive="active" >Classes</a></div>
+        <div><a routerLink="/Contact" routerLinkActive="active" >Contact</a></div>
+        </div>
+      </div>
+    </div>
+    <div class="body-container">
+        <div  *ngIf="openPanel"  class="navigation-container">
+            <ul class="nav">
+                <li>
+                  <a routerLink="/Home" routerLinkActive="active">
+                    <span class="text">Home</span>
+                  </a>
+                </li>
+                <li>
+                  <a routerLink="/Gallery" routerLinkActive="active">
+                    <span class="text">Gallery</span>
+                  </a>
+                  </li>
+                <li>
+                  <a routerLink="/Class" routerLinkActive="active">
+                    <span class="text">Class</span>
+                  </a>
+                  </li>
+                <li>
+                  <a routerLink="/Contact" routerLinkActive="active">
+                    <span class="text">Contact</span>    
+                  </a>
+                </li>
+              </ul>
+          </div>
+        <router-outlet></router-outlet>
+    </div>
+  </div>
